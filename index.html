@@ -1,0 +1,41 @@
+<head>
+    <title>PhoneGap</title>
+    	script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>	
+		 link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+		script src="jquery.js"></script>
+		script src="jquery.mobile-1.2.0.min.js"></script>
+ 
+		script type="text/javascript">
+			$('#employeeListPage').load('http://serv/phonegap/getList.php');
+		</script>
+  </head>
+ 
+  <body>
+		<div data-role="page">
+ 
+			<div data-role="header" data-theme="c">
+				<h1>Liste</h1>
+			</div>
+ 
+			<div data-role="content">
+ 
+				<div id="employeeListPage">
+				</div>
+ 
+			</div>
+ 
+			<div data-role="footer" data-theme="c">
+				<div data-role="navbar">
+ 
+					<ul>
+						<li><a href="" class="ui-btn-active" data-icon = "grid" >Liste des rendez-vous</a></li>
+						<li><a href="index.html"  data-icon = "Add" > Ajout d'un rendez-vous</a></li>
+					</ul>
+ 
+				</div>				
+			</div>
+ 
+		</div>
+ 
+	</body>
+</html>
